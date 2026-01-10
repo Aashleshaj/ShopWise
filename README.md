@@ -1,0 +1,1 @@
+ShopWise is a modern, scalable shopping application designed to simplify product discovery to find the lowest price of product for users. The application focuses on clean architecture, performance, and maintainability, making it suitable for real-world e-commerce or shop-management use cases.
