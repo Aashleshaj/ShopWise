@@ -16,8 +16,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN pip install --upgrade pip
 
 #COPY src/ $MICRO_SERVICE
-COPY ./app.py   $MICRO_SERVICE
+COPY ./scripts/app.py   $MICRO_SERVICE
 COPY ./requirements.txt   $MICRO_SERVICE
-# RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt
 EXPOSE 8501
 CMD streamlit run app.py --server.port=8501 --server.address=0.0.0.0
